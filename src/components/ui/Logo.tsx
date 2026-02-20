@@ -10,9 +10,12 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ size = 40, showText = false, className = "" }) => {
+  // Use CSS variables or predefined tailwind sizes to avoid inline style lint errors
   return (
-    <div className="flex items-center gap-4">
-      <div className={`relative ${className}`} style={{ width: size, height: size }}>
+    <div className="flex items-center gap-4 group" style={{ "--logo-size": `${size}px` } as React.CSSProperties}>
+      <div
+        className={`relative w-[var(--logo-size)] h-[var(--logo-size)] ${className}`}
+      >
         <Image
           src="/logo-symbol.png"
           alt="Succulent Spirits Logo"
@@ -22,7 +25,7 @@ const Logo: React.FC<LogoProps> = ({ size = 40, showText = false, className = ""
         />
       </div>
       {showText && (
-        <span className="font-mono text-[14px] md:text-[20px] tracking-[0.12em] text-brand-cream uppercase whitespace-nowrap">
+        <span className="font-mono text-[14px] md:text-[25px] tracking-[0.12em] text-brand-cream whitespace-nowrap leading-none">
           Succulent Spirits & Co.
         </span>
       )}
