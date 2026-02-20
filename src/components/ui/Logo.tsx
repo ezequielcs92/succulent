@@ -11,11 +11,8 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ size = 40, showText = false, className = "" }) => {
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <div
-        style={{ width: size, height: size }}
-        className="relative"
-      >
+    <div className="flex items-center gap-4">
+      <div className={`relative ${className}`} style={{ width: size, height: size }}>
         <Image
           src="/logo-symbol.png"
           alt="Succulent Spirits Logo"
@@ -25,7 +22,7 @@ const Logo: React.FC<LogoProps> = ({ size = 40, showText = false, className = ""
         />
       </div>
       {showText && (
-        <span className="font-display text-lg leading-tight tracking-tight uppercase text-brand-cream">
+        <span className="font-mono text-[14px] md:text-[20px] tracking-[0.12em] text-brand-cream uppercase whitespace-nowrap">
           Succulent Spirits & Co.
         </span>
       )}

@@ -59,6 +59,18 @@
 :root {
   --background: var(--color-brand-cream);
   --foreground: var(--color-brand-black);
+
+  /* Default Mobile Spacing */
+  --spacing-safe-top: 1.5rem;
+  --spacing-safe-bottom: 2rem;
+  --spacing-container-px: 1.5rem;
+}
+
+@media (width >=768px) {
+  :root {
+    --spacing-container-px: 4rem;
+    --spacing-safe-top: 3rem;
+  }
 }
 
 @layer base {
@@ -85,8 +97,13 @@
   h6 {
     font-family: var(--font-display);
     text-transform: uppercase;
-    letter-spacing: -0.02em;
-    line-height: 0.8;
+    letter-spacing: -0.01em;
+    line-height: 0.85;
+  }
+
+  p {
+    line-height: 1.5;
+    letter-spacing: -0.01em;
   }
 }
 
