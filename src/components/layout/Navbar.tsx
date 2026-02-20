@@ -13,8 +13,8 @@ const Navbar = () => {
                         src="/assets/logo-full.svg"
                         alt="Succulent Spirits & Co."
                         width={200}
-                        height={40}
-                        className="h-8 md:h-10 w-auto object-contain"
+                        height={30}
+                        className="h-[30px] w-auto object-contain"
                         priority
                     />
                 </Link>
