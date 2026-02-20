@@ -17,7 +17,7 @@ const Hero = () => {
                     playsInline
                     className="w-full h-full object-cover grayscale brightness-75 contrast-125"
                 >
-                    <source src="/Video/Video-B&W.mp4" type="video/mp4" />
+                    <source src="/videos/hero-bg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -30,7 +30,7 @@ const Hero = () => {
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="w-full text-center"
                 >
-                    <h1 className="text-brand-cream text-[60px] md:text-[100px] lg:text-[150px] font-display font-[900] tracking-[-0.015em] leading-[0.8]">
+                    <h1 className="text-brand-cream text-[60px] md:text-[100px] lg:text-[150px] font-display font-black tracking-[-0.015em] leading-[0.8] uppercase">
                         BUILDING A HOME <br />
                         FOR THE GOOD STUFF
                     </h1>
