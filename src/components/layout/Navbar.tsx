@@ -14,7 +14,7 @@ const Navbar = () => {
                         alt="Succulent Spirits & Co."
                         width={200}
                         height={30}
-                        className="h-[30px] w-auto object-contain"
+                        className="h-[16px] md:h-[30px] w-auto object-contain"
                         priority
                     />
                 </Link>
