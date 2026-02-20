@@ -105,16 +105,16 @@ const Hero = () => {
             <div className="hidden md:flex container mx-auto px-[var(--spacing-container-px)] relative z-20 h-full flex-col">
 
                 {/* Upper zone: title + mission text, vertically centered */}
-                <div className="flex-1 flex flex-col justify-center gap-[100px] pt-20">
+                <div className="flex-1 flex flex-col justify-center gap-[8vh] pt-[2vh]">
 
                     {/* Main Title */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                        className="w-full text-center mt-[160px]"
+                        className="w-full text-center mt-[12vh]"
                     >
-                        <h1 className="text-brand-cream text-[48px] sm:text-[80px] md:text-[110px] lg:text-[130px] xl:text-[150px] font-display font-black tracking-[-0.02em] leading-[0.8] uppercase headlines-xl">
+                        <h1 className="text-brand-cream text-[48px] sm:text-[80px] md:text-[110px] lg:text-[130px] xl:text-[120px] font-display font-black tracking-[-0.02em] leading-[0.8] uppercase headlines-xl">
                             BUILDING A <br />
                             HOME FOR THE <br />
                             GOOD STUFF
@@ -152,7 +152,7 @@ const Hero = () => {
                 </div>
 
                 {/* Lower zone: CTA pinned to bottom */}
-                <div className="pb-[100px] flex justify-end">
+                <div className="pb-[8vh] flex justify-end">
                     <motion.div
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
