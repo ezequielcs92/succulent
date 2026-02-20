@@ -67,8 +67,8 @@ const Hero = () => {
                                     <Image
                                         src="/logo-symbol.png"
                                         alt="Succulent Spirits & Co."
-                                        width={41}
-                                        height={41}
+                                        width={25}
+                                        height={25}
                                         className="object-contain ml-[142px]"
                                     />
                                 </motion.div>
@@ -84,20 +84,15 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1.2, duration: 0.8 }}
                     >
-                        <Button
-                            asChild
-                            variant="link"
-                            className="text-brand-cream font-mono text-[16px] font-normal leading-none underline decoration-solid hover:text-brand-orange transition-colors group p-0 h-auto"
+                        <a
+                            href="https://www.instagram.com/succulentspirits/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontSize: '12px' }}
+                            className="text-brand-cream font-mono font-normal leading-none underline decoration-solid hover:text-brand-orange transition-colors group flex items-center gap-2"
                         >
-                            <a
-                                href="https://www.instagram.com/succulentspirits/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2"
-                            >
-                                See what we&apos;re about <span className="group-hover:translate-x-1 transition-transform">→</span>
-                            </a>
-                        </Button>
+                            See what we&apos;re about <span className="group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
                     </motion.div>
                 </div>
             </div>
