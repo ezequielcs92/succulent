@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=Unbounded:wght@900&display=swap');
+
+@font-face {
+  font-family: 'Baste B';
+  src: url('/fonts/BasteB-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baste B';
+  src: url('/fonts/BasteB-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baste B';
+  src: url('/fonts/BasteB-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Favorit Mono';
+  src: url('/fonts/ABCFavoritMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baltiholm';
+  src: url('/fonts/baltiholm-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #d15a2e;
+  --color-brand-cream: #e8e2d4;
+  --color-brand-tan: #b7a079;
+  --color-brand-black: #1c1c1b;
+
+  --font-display: "Baste B", "Syne", system-ui;
+  --font-heading: "Baltiholm", "Syne", system-ui;
+  --font-mono: "ABC Favorit Mono", "Space Mono", monospace;
+
+  --breakpoint-xs: 375px;
+  --breakpoint-2xl: 1440px;
+}
+
+:root {
+  --background: var(--color-brand-cream);
+  --foreground: var(--color-brand-black);
+}
+
+@layer base {
+
+  html,
+  body {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.8;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px var(--color-brand-black);
+  color: transparent;
+}
+
+.bg-glass {
+  background: rgba(242, 239, 233, 0.7);
+  backdrop-filter: blur(10px);
+}

@@ -1,0 +1,27 @@
+/*
+Font: 		
+Style: 		
+URL: 		https://youworkforthem.com/font/T20697/baltiholm
+Foundry: 	Allouse.Studio
+Foundry: 	https://youworkforthem.com/designer/1702/allouse-studio
+Copyright:	
+Version: 	17
+Created:	August 09, 2023
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'Baltiholm';
+	src: url('baltiholm-regular.eot');
+	src: url('baltiholm-regular.eot?#iefix') format('embedded-opentype'),
+             url('baltiholm-regular.woff2') format('woff2'),
+	     url('baltiholm-regular.woff') format('woff'),
+	     url('baltiholm-regular.ttf') format('truetype'),
+	     url('baltiholm-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
